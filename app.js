@@ -6,3 +6,9 @@ const number_us_states = 50;
 
 // this is a variable the adds two numbers together
 var add_num = 5 + 4;
+
+function sayHello() {
+    alert("Hello World!")
+}
+
+sayHello();
