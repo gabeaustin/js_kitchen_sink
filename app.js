@@ -1,20 +1,17 @@
 // Number 4
-// this is a variable that has a value of the developer's name
+// This is a variable that has a value of the developer's name.
 let name = "Gabriel";
-// next line used for testing purposes
-console.log(name);
+
 
 // Number 5
-// this is a constant variable the lists the # of US states
+// This is a constant variable the lists the # of US states.
 const number_us_states = 50;
-// next line used for testing purposes
-console.log(number_us_states);
+
 
 // Number 6
-// this is a variable the adds two numbers together
+// This is a variable the adds two numbers together.
 let add_num = 5 + 4;
-// next line used for testing purposes
-console.log(add_num);
+
 
 // Number 8
 function sayHello() {
@@ -27,8 +24,6 @@ sayHello();
 // Number 9
 function checkAge(name, age) {
     if (age < 21) {
-        // alert("Sorry " + name + ", you aren't old enough to view this page!");
-        // next line used for testing purposes
         console.log("Sorry " + name + ", you aren't old enough to view this page!");
     }
 }
@@ -52,30 +47,70 @@ let various_people = [
     }
 ];
 
-// checkAge(various_people[0].name, various_people[0].age);
-// checkAge(various_people[1].name, various_people[1].age);
-
 for (let i = 0; i < various_people.length; i++) {
     checkAge(various_people[i].name, various_people[i].age);
 }
 
-// END OF NUMBER 9
 
 // Number 10
-// let fav_veggies = ["Kale", "Carrots", "Green Peas", "Asparagus"];
+let fav_veggies = ["Kale", "Carrots", "Green Peas", "Asparagus"];
 
-// for (let i = 0; i < fav_veggies.length; i++) {
-//     console.log(fav_veggies[i]);
-// }
+for (let i = 0; i < fav_veggies.length; i++) {
+    console.log(fav_veggies[i]);
+}
+
 
 // Number 11
-// let pet = {
-//     name: "Bentley",
-//     breed: "French Bulldog"
-// };
+let pet = {
+    name: "Bentley",
+    breed: "French Bulldog"
+};
 
-// console.log(pet.name);
-// console.log(pet.breed);
+console.log(pet.name);
+console.log(pet.breed);
+
 
 // Number 12
-// let new_users = [name: "Jon", age: 38, name: "Crystal", age: 21, ]
+let new_users = [
+    {
+        name: "Jon",
+        age: 38
+    },
+    {
+        name: "Crystal",
+        age: 21
+    },
+    {
+        name: "Bradley",
+        age: 10
+    },
+    {
+        name: "Betty",
+        age: 68
+    },
+    {
+        name: "Leah",
+        age: 20
+    }
+];
+
+for (let i = 0; i < new_users.length; i++) {
+    checkAge(new_users[i].name, new_users[i].age);
+}
+
+
+// Number 14
+function getLength(random_word) {
+    return random_word.length;
+}
+
+let length_of_word = getLength("Hello world");
+
+if (length_of_word % 2 == 0) {
+    console.log("The world is nice and even!");
+} else {
+    console.log("The world is an odd place!");
+}
+
+
+
